@@ -1,4 +1,4 @@
-package main.java.Lesson21;
+package compiled.Lesson21;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
@@ -12,8 +12,6 @@ public class HelloWorldHandler implements HttpHandler {
     public void handle(HttpExchange exchange){
         try {
             OutputStream responseBody = exchange.getResponseBody(); {
-
-
                 String text = "Hello, world!";
                 byte[] result = text.getBytes();
                 exchange.sendResponseHeaders(200, result.length);
