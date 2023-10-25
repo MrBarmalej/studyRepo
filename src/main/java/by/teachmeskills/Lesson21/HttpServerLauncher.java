@@ -1,4 +1,4 @@
-package compiled.Lesson21;
+package by.teachmeskills.Lesson21;
 
 import com.sun.net.httpserver.HttpServer;
 
