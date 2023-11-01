@@ -9,9 +9,10 @@ import java.io.OutputStream;
 public class HelloWorldHandler implements HttpHandler {
 
     @Override
-    public void handle(HttpExchange exchange){
+    public void handle(HttpExchange exchange) {
         try {
-            OutputStream responseBody = exchange.getResponseBody(); {
+            OutputStream responseBody = exchange.getResponseBody();
+            {
                 String text = "Hello, world!";
                 byte[] result = text.getBytes();
                 exchange.sendResponseHeaders(200, result.length);

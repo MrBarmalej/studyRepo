@@ -14,7 +14,6 @@ public class HttpServerLauncher {
         httpServer.createContext("/beijing", new TimeHandler());
         httpServer.createContext("/", new HelloWorldHandler());
         httpServer.start();
-
-        }
     }
+}
 
