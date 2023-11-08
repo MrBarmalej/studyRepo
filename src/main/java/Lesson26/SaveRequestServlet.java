@@ -18,7 +18,7 @@ public class SaveRequestServlet extends HttpServlet {
             request.setAttribute("name", name);
             request.setAttribute("email", email);
             request.setAttribute("description", description);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("success-page.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("requestSuccessful");
             dispatcher.forward(request, response);
         }
     }
